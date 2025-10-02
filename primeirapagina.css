@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+}
+body{
+    font-family: Roboto;
+    color:rgb(241, 241, 241);
+    background-color: rgb(0, 0, 0);
+}
+
+.topo{
+    display: flex;  /* alinhar logo e menu lado a lado.*/
+    justify-content: space-between;/*justifica todos os elementos*/
+    align-items: center;/*centraliza os elementos*/
+    padding: 40px;
+    background-color: rgb(10, 88, 7);
+    border-bottom: 3px solid #ebebeb;
+}
+.bloco faixa-gradiante{
+    font-family: 'Times New Roman';
+
+}
+

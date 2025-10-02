@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões com Degradê</title>
+</head>
+<style>
+    /* Estilos aplicados ao basico da página*/
+    body{
+        font-family: Arial, sans-serif;
+        background: #ffffff;
+        text-align: center;
+        padding: 3rem;
+        font-size: 2rem;
+    }
+    /*Classe base para todos os botões */
+    .btn{
+        background: #ffffff; /*Cor inicial do botão*/
+        border: 2px solid #ccc;
+        padding: 1rem 2rem;
+        margin: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.4 ease;
+
+    }
+    .btn-azul:hover{
+        background: linear-gradient(200deg, #006faf, #011a8b);
+        color: #ffffff;
+        border-color:   #ffffff;
+    }
+    .btn-amarelo:active{
+        background: linear-gradient(150deg,#facc15,#e66700,#cf2900);
+        color: #0e0d0d;
+        border-color: #ffffff;
+    }
+    .btn-verde:focus{
+        background: linear-gradient(90deg, #35ec07, #297007);
+        color: #0e0d0d;
+        border: #ffffff;
+    }
+    .btn-roxo:focus{
+        background: linear-gradient(90deg, #872ffa, #5404bd);
+        color: #ffffff;
+        border-color: #ffffff;
+    }
+    
+</style>
+<body>
+    <h1>Exemplo de botões</h1>
+    <!--Botão numero 1: muda de cor uiilizando hover, passar o mouse em cima-->
+    <button class="btn btn-azul">Passe o mouse aqui!</button>
+    <!--Botão numero 2: muda de cor utilizqando o hover- muda quando clicado-->
+    <button class="btn btn-amarelo">Clique aqui(segure)</button>
+    <button class="btn btn-verde">AI PAPAI</button>
+    <button class="btn btn-roxo">ETBILU</button>
+    
+</body>
+</html>

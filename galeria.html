@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="galeria1.css">
+</head>
+<style>
+  .fotos figure{
+    width: 400px;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 400px;
+    overflow: hidden; /*CORTA IMAGEM QUE PASSAR DO ESPAÇO DELIMITADO*/
+    background: #000000;
+    border-radius: 10px;
+    
+}
+.fotos{
+    gap: 20px;/*MANTER ESPAÇO AUTOMATICOS ENTRE OS ITENS*/
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    margin-top: 500px
+}
+.fotos figure img {
+    width: 100%; 
+    height: 450px;
+    display: block;
+    object-fit: cover; /* corta a imagem mantendo a proporção em todas as imagens*/
+  }
+.fotos figure figcaption{
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex: 1;
+    display: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+body{
+    background: linear-gradient(150deg, #000000, #949494); /* como usar degrade*/
+    margin: 0;
+}
+.fotos figure:hover{
+    box-shadow: 0 0 20px rgb(240, 240, 240);
+    transform: translateY(-10px);
+    transition: 0.4s ease;
+    
+}
+</style>
+<body>
+  <header>
+    <nav>
+      <ul class="lista">
+        <li><a href="inicio">Inicio</a></li>
+        <li><a href="galeria">Galeria</a></li>
+        <li><a href="suporte">Suporte</a></li>
+        <li><a href="login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="fotos">
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2017/03/27/14/33/ancient-2179091_960_720.jpg">
+      <figcaption>Vasos de barro</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2016/08/23/13/12/knitting-1614283_960_720.jpg">
+      <figcaption>Ursinos de crochê</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2015/05/24/19/24/guatemala-782274_960_720.jpg">
+      <figcaption>Bonecos de cerâmica</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2018/03/30/21/45/easter-3276635_960_720.jpg">
+      <figcaption>Ovos de Páscoa</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2018/04/16/17/11/crafts-3325211_1280.jpg">
+      <figcaption>Xícaras personalizadas</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2018/01/04/11/19/crown-3060391_960_720.jpg" alt="">
+      <figcaption>Coroa de metal</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2018/09/13/01/05/crafts-3673562_960_720.jpg" alt="">
+      <figcaption>Decorações</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2019/02/12/14/01/shoes-3992309_960_720.jpg" alt="">
+      <figcaption>Estilo em sapatos</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2017/08/14/17/57/andalusia-2641330_960_720.jpg" alt="">
+      <figcaption>Escada artistica</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2013/10/20/22/14/ceramic-198712_960_720.jpg" alt="">
+      <figcaption>Porcelanatos</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2019/12/11/17/15/day-of-the-dead-4688799_1280.jpg" alt="">
+      <figcaption>Caveira Mexicana</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cdn.pixabay.com/photo/2018/09/28/19/13/cart-3710021_960_720.jpg" alt="">
+      <figcaption>Carrinhos de madeira</figcaption>
+    </figure>
+  </section>
+</body>
+</html>
